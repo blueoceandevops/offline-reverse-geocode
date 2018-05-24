@@ -1,19 +1,23 @@
-An Offline Reverse Geocoding Java library
+[![Build Status][travis-badge]][travis-badge-url]
+[![Quality Gate][sonarqube-badge]][sonarqube-badge-url] 
+[![Technical debt ratio][technical-debt-ratio-badge]][technical-debt-ratio-badge-url] 
+[![Coverage][coverage-badge]][coverage-badge-url]
 
-Uses KD-Trees for extremely fast placename lookups
 
-Licensed under The MIT License
+ Offline Reverse Geocoding Java library Example
+===================================================
 
-A C# port by Necrolis is available at https://github.com/Necrolis/GeoSharp
+An [Offline Reverse Geocoding](https://github.com/AReallyGoodName/OfflineReverseGeocode/blob/master/src/main/java/geocode/GeoName.java) Java library is used for locating a place based on logitude and latitude.
 
-Usage:
 
-First download a placenames file from http://download.geonames.org/export/dump/
+[travis-badge]: https://travis-ci.org/indrabasak/offline-reverse-geocode.svg?branch=master
+[travis-badge-url]: https://travis-ci.org/indrabasak/offline-reverse-geocode/
 
-Allcountries.zip from that site is comprehensive however if you're on mobile try the cities1000.zip file. It's 1/80th of the size.
+[sonarqube-badge]: https://sonarcloud.io/api/project_badges/measure?project=com.basaki%3Aoffline-reverse-geocode&metric=alert_status
+[sonarqube-badge-url]: https://sonarcloud.io/dashboard/index/com.basaki:offline-reverse-geocode 
 
-Then simply
+[technical-debt-ratio-badge]: https://sonarcloud.io/api/project_badges/measure?project=com.basaki%3Aoffline-reverse-geocode&metric=sqale_index
+[technical-debt-ratio-badge-url]: https://sonarcloud.io/dashboard/index/com.basaki:offline-reverse-geocode
 
-ReverseGeoCode reverseGeoCode = new ReverseGeoCode(new FileInputStream("c:\\\\AU.txt"), true);
-
-System.out.println("Nearest to -23.456, 123.456 is " + geocode.nearestPlace(-23.456, 123.456));
+[coverage-badge]: https://sonarcloud.io/api/project_badges/measure?project=com.basaki%3Aoffline-reverse-geocode&metric=coverage
+[coverage-badge-url]: https://sonarcloud.io/dashboard/index/com.basaki:offline-reverse-geocode
